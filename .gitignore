@@ -1,0 +1,53 @@
+cat > .gitignore << 'EOF'
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production builds
+/.next/
+/out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (if these are user uploads, not static assets)
+uploads/
+
+# SSH keys
+*.pub
+"eval \"$(ssh-agent -s)\""
+"eval \"$(ssh-agent -s)\".pub
+
+# Claude AI files
+.claude/
+EOF
